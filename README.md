@@ -1,3 +1,7 @@
+---
+stylesheet: custom.css
+---
+
 # 1. Top Level Heading
 
 It doesn't work...
