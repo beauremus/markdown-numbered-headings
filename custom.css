@@ -1,0 +1,18 @@
+body {
+  counter-reset: h1 h2 h3; /* Initialize counters for h1, h2, h3 */
+}
+
+h1:before {
+  counter-increment: h1; /* Increment counter for h1 */
+  content: counter(h1) ". " /* Display counter value and a dot */
+}
+
+h2:before {
+  counter-increment: h2; /* Increment counter for h2 */
+  content: counter(h1) "." counter(h2) ". "  /* Display h1 and h2 counter values */
+}
+
+h3:before {
+  counter-increment: h3; /* Increment counter for h3 */
+  content: counter(h1) "." counter(h2) "." counter(h3) ". " /* Display all counters */
+}
